@@ -5,5 +5,5 @@
 - 厦大
   - 化院：[LINK](https://github.com/CrazyGang97/zotero_styles/tree/master/XMU/chemistry)
 
-## 支持
+## 帮助
 如需提供其他样式定制，请截图需要的论文样式案例至[email](mailto:gang_dong@outlook.com)或[issue](https://github.com/CrazyGang97/zotero_styles/issues)
