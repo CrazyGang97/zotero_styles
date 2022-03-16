@@ -15,12 +15,12 @@
     <category field="generic-base"/>
     <category field="science"/>
     <summary>This style just partly implemented what the Chinese GB/T 7714-1987 requires.</summary>
-    <updated>2022-03-10T12:49:26+00:00</updated>
+    <updated>2022-03-16T02:45:08+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">
     <names variable="author">
-      <name delimiter-precedes-last="always" initialize-with=" " name-as-sort-order="all" sort-separator=" "/>
+      <name delimiter=";" delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
     </names>
   </macro>
   <macro name="recipient">
@@ -79,7 +79,7 @@
         <text variable="number" prefix=": 中国, " suffix=" [P].  "/>
       </else-if>
       <else>
-        <text macro="title" suffix="[J]. "/>
+        <text macro="title" suffix=" [J]. "/>
       </else>
     </choose>
   </macro>
@@ -110,7 +110,7 @@
         <text variable="container-title" prefix=". "/>
       </else-if>
       <else>
-        <text variable="container-title" form="short" strip-periods="false" font-style="italic" suffix=". "/>
+        <text variable="container-title" form="short" strip-periods="false" font-style="italic" suffix=" "/>
       </else>
     </choose>
     <text variable="publisher-place" suffix=": "/>
@@ -174,7 +174,7 @@
     <layout suffix=".">
       <text variable="citation-number" prefix="[" suffix="]"/>
       <text macro="author" suffix=". "/>
-      <text macro="titleField" suffix=" "/>
+      <text macro="titleField"/>
       <text macro="secondaryAuthor" suffix=". "/>
       <text variable="edition" prefix="第" suffix="版. "/>
       <text macro="publisher"/>
